@@ -1,6 +1,23 @@
 
 ## Installation
 
+### Environnement
+```
+pip install pipenv
+pipenv shell
+```
+### Package
+```
+pip install requirements.txt
+```
+
+### Lancement 
+
+```
+git clone https://github.com/lefatoum2/Psg_news_django.git
+cd Psg_news_django/psg_news
+py manage.py runserver
+```
 ## Utilisation de NewsApi
 Inscription sur https://newsapi.org/ et obtenez votre APi Key.
 
