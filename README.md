@@ -1,4 +1,4 @@
-
+![img6](./img/psg_news2.png)
 ## Installation
 
 ### Environnement
