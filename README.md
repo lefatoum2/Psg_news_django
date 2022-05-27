@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ## Installation
 
@@ -118,3 +119,6 @@ index.html:
 ## Fin 
 
 ![img6](./img/2022-05-27a.jpg)
+=======
+# Psg_news_django
+>>>>>>> a40583f6975ac79dbab3c7d2a2e3dc38d9a8189f
