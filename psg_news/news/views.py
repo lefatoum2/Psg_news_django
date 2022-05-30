@@ -2,7 +2,6 @@
 from django.shortcuts import render
 import requests
 import json
-import config
 import os
 from dotenv import load_dotenv
 load_dotenv()
