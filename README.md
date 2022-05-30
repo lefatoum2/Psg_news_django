@@ -134,3 +134,12 @@ index.html:
 ![img6](./img/psg_news3.png)
 
 ![img6](./img/mbappe1.jpg)
+
+
+##### Utulisation de python-dotenv :
+
+https://www.youtube.com/watch?v=YdgIWTYQ69A
+
+https://github.com/theskumar/python-dotenv
+https://www.toptal.com/developers/gitignore/
+
