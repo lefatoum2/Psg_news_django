@@ -136,7 +136,7 @@ index.html:
 ![img6](./img/mbappe1.jpg)
 
 
-##### Utulisation de python-dotenv :
+##### Utulisation de python-dotenv pour cacher mon Api Key:
 
 https://www.youtube.com/watch?v=YdgIWTYQ69A
 
