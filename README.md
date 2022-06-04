@@ -13,6 +13,12 @@ pipenv shell
 git clone https://github.com/lefatoum2/Psg_news_django.git
 pip install requirements.txt
 cd Psg_news_django/psg_news
+py manage.py makemigrations 
+py manage.py migrate
+py manage.py createsuperuser 
+
+...
+
 py manage.py runserver
 ```
 ## Utilisation de NewsApi
