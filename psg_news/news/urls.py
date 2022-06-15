@@ -1,4 +1,4 @@
-from django.urls import path , include
+from django.urls import path 
 from .views import home_view, usa_view, france_view, world_view, necro_view
 
 
