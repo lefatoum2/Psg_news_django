@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/newspaper.css' %}">
+        <title>Newspaper Style Design Experiment</title>
+        <meta name="viewport" content="width=device-width">
+    
+    </head>
+    <body>
+    <div class="head">
+        <div class="headerobjectswrapper">
+            <div class="weatherforcastbox"><span style="font-style: italic;">Weatherforcast for the next 24 hours: Plenty of Sunshine</span><br><span>Wind: 7km/h SSE; Ther: 21°C; Hum: 82%</span></div>
+            <header>PSG TIMES</header>
+        </div>
+    
+        <div class="subhead">Paris - {{date1}} </div>
+    </div>
+
+
+
+    <div class="content">
+        <div class="collumns">
+            {% for onedata in data.articles %}
+
+            
+            <div class="collumn">
+                <div class="head"><span class="headline hl5">{{onedata.title}}</div>
+                
+                <figure class="figure">
+                    <a href="{{onedata.url}}" target="blank" class="btn btn-primary"><img class="media" src="{{onedata.urlToImage}}" alt=""></a>
+                                    <figcaption class="figcaption">{{onedata.source.name}}</figcaption>
+                            </figure>
+    
+                <p>{{onedata.description|truncatechars:1000}}</p>
+    
+    
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    </body>
+
+
+</html>
