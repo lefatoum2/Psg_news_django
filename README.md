@@ -1,4 +1,4 @@
-![img6](./img/psg_news2.png)
+![img6](./img/psg_times.png)
 ## Installation
 
 ### Environnement
@@ -135,7 +135,7 @@ index.html:
 
 ## Fin 
 
-![img6](./img/psg_news3.png)
+
 
 ![img6](./img/mbappe1.jpg)
 
