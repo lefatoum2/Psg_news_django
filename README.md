@@ -68,31 +68,42 @@ df =  pd.DataFrame(newstrumpheadlines)
 
 ## Views 
 ```py
-def home_view(request):
+...
+
+def temp1():
+    city = 'Paris, PA'
+    url = f'https://api.weatherbit.io/v2.0/current?&city={city}&key={api_key2}&include=minutely'
+    response = requests.get(url)
+    data = response.json()['data'][0]
+    return data
+
+
+
+
+def home4(request):
     url = f"https://newsapi.org/v2/top-headlines?q=psg&category=sport&country=fr{ api_key}"
     response = requests.get(url)
     content_from_internet = json.loads(response.content)
+    date1 = datetime.now()
+    weather = temp1()
     context={
-    'data':content_from_internet,
+    'data':content_from_internet,'date1':date1, 'weather1':weather
     }
-    return render(request,'index.html',context)
+    return render(request,'index5.html',context)
+
 
 ```
 
 ## URLS
 
-news/urls.py :
+news2/urls.py :
 ```py
 from django.urls import path , include
-from .views import home_view, usa_view, france_view, world_view, necro_view
+from .views import home4
 
 
 urlpatterns = [
-path('',home_view,name='home'),
-path('usa',usa_view,name='usa'),
-path('france',france_view,name='france'),
-path('world',world_view,name='world'),
-path('necro',necro_view,name='necro'),
+path('',home4,name='home4'),
 ]
 ```
 
@@ -105,7 +116,7 @@ from django.urls import path , include
 
 urlpatterns = [
 path('admin/', admin.site.urls),
-path('',include('news.urls'))
+path('', include('news2.urls')),
 ]
 ```
 
